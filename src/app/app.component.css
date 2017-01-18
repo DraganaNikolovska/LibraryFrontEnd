@@ -1,0 +1,35 @@
+md-toolbar.md-primary {
+  background: #286090;
+}
+
+md-sidenav .material-icons{
+  color: #286090;
+}
+
+md-sidenav{
+  background-color: #C6CCD4;
+  background-color: #C6CCD4;
+  border-right: #a6a1a1;
+}
+
+md-nav-list md-list-item span {
+  font-family: cursive;
+  color: #286090;
+  font-weight: bold;
+}
+
+.mainContent {
+  padding-left: 1%;
+  padding-top: 1%;
+  background-color: #f1f3f7;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+

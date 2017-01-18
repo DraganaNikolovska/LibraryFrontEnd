@@ -1,3 +1,32 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout fullscreen>
+  <md-sidenav #start opened="true" style="width: 200px;" mode="side" style="height: 100%;">
+    <md-nav-list>
+      <md-list-item>
+        <md-icon>home</md-icon>
+        <a [routerLink]="['/home']"><span>Home </span></a></md-list-item>
+      <md-list-item>
+        <md-icon>face</md-icon>
+        <a [routerLink]="['/profile']"><span> My profile </span></a></md-list-item>
+      <md-list-item>
+        <md-icon>library_books</md-icon>
+        <a [routerLink]="['/books']"> <span>Books</span></a></md-list-item>
+      <md-list-item>
+        <md-icon>domain</md-icon>
+        <a [routerLink]="['/magazines']"> <span>Magazines</span></a></md-list-item>
+    </md-nav-list>
+
+
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <md-icon (click)="start.toggle()">menu</md-icon>
+    <span class="example-fill-remaining-space"></span>
+
+    <button md-button (click)="signIn()" >Sign in</button>
+  </md-toolbar>
+
+  <div class="mainContent">
+    <router-outlet></router-outlet>
+  </div>
+
+</md-sidenav-layout>
